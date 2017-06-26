@@ -1,0 +1,31 @@
+{
+  "name": "ReactYoutubeGallery",
+  "version": "0.1.0",
+  "description": "Youtube Gallery using React and Flux.",
+  "main": "app.js",
+  "author": "Pierre-Louis Legrand",
+  "homepage": "https://kishlin.github.io/ReactYoutubeGallery",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kishlin/ReactYoutubeGallery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kishlin/ReactYoutubeGallery/issues"
+  },
+  "devDependencies": {
+    "browserify": "*",
+    "flux": "*",
+    "gulp": "*",
+    "reactify": "*",
+    "vinyl-source-stream": "*",
+    "object-assign": "*"
+  },
+  "dependencies":{
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d web/dist",
+    "start": "gulp"
+  }
+}
