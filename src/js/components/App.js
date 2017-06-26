@@ -2,9 +2,11 @@ var React = require('react');
 var AppActions = require('../actions/AppActions');
 var AppStore = require('../stores/AppStore');
 
+var AddForm = require('./AddForm.js');
+
 function getAppState(){
 	return {
-
+		videos: AppStore.getVideos()
 	}
 }
 
@@ -22,9 +24,11 @@ var App = React.createClass({
 	},
 
 	render: function(){
+		console.log(this.state.videos);
+
 		return(
 			<div>
-				Hello World
+				<AddForm />
 			</div>
 		);
 	},
