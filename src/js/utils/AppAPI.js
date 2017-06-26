@@ -13,4 +13,25 @@ module.exports = {
 
 		return newKey;
 	},
+
+	getVideos: function(){
+		var database = firebase.database();
+		database.ref().once('value', function(snapshot) {
+			var videos = [];
+			snapshot.forEach(function(childSnapshot) {
+				Object.keys(childSnapshot.val()).forEach(function(key) {
+					var data = childSnapshot.val()[key];
+					var video = {
+						id: key,
+						title: data.title,
+						video_id: data.video_id,
+						description: data.description
+					}
+					videos.push(video);
+				});
+			});
+
+			AppActions.receiveVideos(videos);
+		});
+	}
 }
