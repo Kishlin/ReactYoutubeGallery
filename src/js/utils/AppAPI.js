@@ -33,5 +33,10 @@ module.exports = {
 
 			AppActions.receiveVideos(videos);
 		});
+	},
+
+	removeVideo: function(videoId){
+		var database = firebase.database();
+		firebase.database().ref('/videos/' + videoId).remove();
 	}
 }

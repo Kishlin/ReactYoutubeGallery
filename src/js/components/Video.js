@@ -16,7 +16,7 @@ var Video = React.createClass({
 	},
 
 	onDelete: function(i, j){
-		e.preventDefault();
+		AppActions.removeVideo(i);
 	}
 });
 
