@@ -22,6 +22,7 @@ var AddForm = React.createClass({
 							<textarea className="form-control" ref="description"></textarea>
 						</div>
 						<button type="submit" className="button">Add</button>
+						<legend>The video's id stands after the ?v= in a video url on Youtube.</legend>
 					</form>
 				</panel>
 			</div>
