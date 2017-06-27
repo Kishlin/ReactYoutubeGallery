@@ -24,3 +24,6 @@ yarn-error.log*
 
 # App Constants
 /src/js/constants/AppConstants.js
+
+# Zimit css
+/src/css/zimit.css
